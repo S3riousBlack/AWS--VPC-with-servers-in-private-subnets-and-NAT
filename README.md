@@ -12,14 +12,17 @@ SSH key pair and access control: Generate an SSH key pair and securely store the
 
 Test and validate the setup: SSH into the EC2 instances using the private key and verify connectivity. Test network connectivity between instances in different subnets. Validate security group rules and network ACL settings.
 
+
+
 Overview:
 
-Overview 
 The VPC has public subnets and private subnets in two Availability Zones. 
 Each public subnet contains a NAT gateway and a load balancer node. 
 The servers run in the private subnets, are launched and terminated by using an 
 Auto Scaling group, and receive traffic from the load balancer. 
 The servers can connect to the internet by using the NAT gateway. ![Uploading image.png…]()
+
+
 Commands used for this project
 ssh- keypair ubuntu@ipaddress
 scp command to copy keypair from local machine to bastion
