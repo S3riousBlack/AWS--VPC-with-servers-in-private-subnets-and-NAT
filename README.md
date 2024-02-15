@@ -29,3 +29,5 @@ scp command to copy keypair from local machine to bastion
 command - scp -i /home/umarkhan/Downloads/keypair1.pem /home/umarkhan/Downloads/keypair1.pem ubuntu@ipaddress: /home/ubuntu
 vim index.html
 python3 -m http.server 8000
+netstat -lntp | grep :8000
+sudo kill -9 processid
